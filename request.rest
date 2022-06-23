@@ -1,0 +1,19 @@
+POST http://localhost:3003/turma
+Content-Type: application/json
+
+{
+    "nome": "turma teste",
+    "modulo": "0"
+}
+
+###
+GET http://localhost:3003/turma
+
+######
+PUT http://localhost:3003/turma/id
+Content-Type: application/json
+
+{
+   
+    "modulo": "0"
+}

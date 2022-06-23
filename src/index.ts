@@ -1,16 +1,17 @@
 import { app } from "./app";
-import { AddressInfo } from 'net'
-import dotenv from 'dotenv'
+import { Request, Response } from "express"
+import createTurma from './endpoints/createTurma'
+import searchTurma from './endpoints/searchTurma'
+import changeTurma from "./endpoints/changeTurma";
 
-dotenv.config()
+
+app.post("/turma", createTurma);
+
+app.get("/turma", searchTurma);
+
+app.put("/turma/id", changeTurma);
 
 
 
-const server = app.listen(process.env.PORT || 3003, () => {
-    if (server) {
-       const address = server.address() as AddressInfo;
-       console.log(`Server is running in http://localhost:${address.port}`);
-    } else {
-       console.error(`Failure upon starting server.`);
-    }
-});
+
+
