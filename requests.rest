@@ -1,0 +1,14 @@
+GET http://localhost:3003/student
+
+
+###
+
+POST http://localhost:3003/student
+Content-Type: application/json
+{
+    "nome": "Luiz Vinícius",
+    "email": "lv@gmail.com",
+    "data_nasc":"",
+    "turma_id": "",
+    "hobbies":["","",""]
+}

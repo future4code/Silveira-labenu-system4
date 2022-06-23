@@ -1,8 +1,26 @@
 import { app } from "./app";
 import { AddressInfo } from 'net'
 import dotenv from 'dotenv'
+import StudentController from "./endpoints/students/StudentController";
 
 dotenv.config()
+
+
+const studentController = new StudentController()
+app.post("/student", studentController.createStudent)
+
+app.post("/student", studentController.getStudents)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
