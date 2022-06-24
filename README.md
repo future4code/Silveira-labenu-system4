@@ -35,7 +35,7 @@ As funcionalidades básicas são:
 ## Link da documentação
 https://documenter.getpostman.com/view/20356729/UzBqqRFn
 
-##Membros da equipe:
+## Membros da equipe:
 
 → Eduarda Pacheco
 
