@@ -27,17 +27,19 @@ export class TurmaData extends BaseDatabase {
         }
     }
 
-    public async update(turma: TurmaModel) {
+    public async update(modulo: TurmaModel, id: string) {
+        console.log('ID', id)
         try {
-            await this.getConnection()
+            await this.getConnection().from("turma_labenu")
                 .update({
-                    modulo: turma.getModulo()
+                    modulo: modulo
                 })
-                .into("turma_labenu")
-
-        } catch (error) {
-            throw new Error("Error")
+                .where('id', id)
+            }
+            
+            catch(error){
+                throw new Error("Error")
+            }
         }
-    }
 
 }
