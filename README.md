@@ -36,6 +36,7 @@ As funcionalidades básicas são:
 https://documenter.getpostman.com/view/20356729/UzBqqRFn
 
 ##Membros da equipe:
+
 → Eduarda Pacheco
 
 → Graziela Queiroz
