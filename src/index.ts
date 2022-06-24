@@ -12,16 +12,14 @@ const studentController = new StudentController()
 app.post("/student", studentController.createStudent)
 
 app.get("/student", studentController.getStudents)
+<<<<<<< HEAD
 app.get("/student/:nome", studentController.getStudentByName)
 app.put("/student/edit", studentController.changeClassOfStudent)
+=======
+>>>>>>> master
 
 
 // app.post("/docent", docentController.createDocent)
-
-
-
-
-
 
 
 
