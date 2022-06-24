@@ -17,7 +17,7 @@ app.put("/turma/id", turmaController.putTurma);
 
 app.post("/student", studentController.createStudent)
 
-app.post("/student", studentController.getStudents)
+app.get("/student", studentController.getStudents)
 
 app.post("/docent", docentController.createDocent)
 
