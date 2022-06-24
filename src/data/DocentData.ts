@@ -30,22 +30,4 @@ class DocentData extends BaseDatabase{
         }
     }
 }
-/*
-
-
-            for(let i: number = 0; i < especialidades.length; i++) {
-
-                const resultado = await connection("Especialidade")
-                    .where({ nome: especialidades[i].toUpperCase() })
-
-                await connection("Docente_Especialidade")
-                    .insert({
-                        id: String(Date.now()),
-                        docente_id: docente.getId(),
-                        especialidade_id: resultado[0].id
-                    })
-            }
-
-            res.status(201).send("Docente criado")
-*/
 export default DocentData;
