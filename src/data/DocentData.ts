@@ -29,5 +29,28 @@ class DocentData extends BaseDatabase{
                  }).into(intersectionTable)
         }
     }
+
+    async getDocentByName(nome: string): Promise<any> {
+       const result = await this.getConnection()
+        .raw(`SELECT * FROM ${table} WHERE nome LIKE "%${nome}%" `)
+
+        return result[0]
+    }
+
+    async getAllDocents():Promise<any> {
+       const result = await this.getConnection()
+        .select("*").from(table)
+
+        return result
+    }
+
+    async changeDocentClass(id_docente: string, id_turma: string):Promise<void>{
+       await this.getConnection()
+        .raw(
+            `
+            UPDATE ${table} SET turma_id = "${id_turma}" WHERE id = "${id_docente}"
+            `
+        )
+    }
 }
 export default DocentData;
