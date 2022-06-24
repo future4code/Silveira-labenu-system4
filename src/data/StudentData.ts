@@ -42,28 +42,7 @@ class StudentData extends BaseDatabase {
             }
 
         }
-
-
-        // student.getHobbies().map(async(hobbie)=>{
-        //     const idHobbies = Date.now().toString()
-        //     const findHobbie = await this.getConnection().raw(`SELECT nome FROM hobbies_estudantes WHERE nome = ${hobbie}`)
-        //     if(!findHobbie){
-        //     await this.getConnection()
-        // .insert ({
-        //     id: idHobbies,
-        //     nome: hobbie,
-
-        // })
-        // .into("hobbies_estudantes")
-        // .insert({
-        //     id_hobbie: idHobbies,
-        //     id_estudante: student.getId()
-        // })
-        // .into("intermediate_hobbies")
-        //     }          
-        // })
     }
-    // especialidades.map((esp) => {idDocente: docent.getId(), id_especialidade: esp})
 
     async getAllStudents() {
         const result = await this.getConnection().select("*").from("estudantes_labenu")
