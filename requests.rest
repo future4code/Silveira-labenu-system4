@@ -1,14 +1,27 @@
-GET http://localhost:3003/student
+# GET http://localhost:3003/student
 
+
+# ###
+
+# POST http://localhost:3003/student
+# Content-Type: application/json
+# {
+#     "nome": "Luiz Vinícius",
+#     "email": "lv@gmail.com",
+#     "data_nasc":"",
+#     "turma_id": "",
+#     "hobbies":["","",""]
+# }
 
 ###
 
-POST http://localhost:3003/student
+POST http://localhost:3003/docent
 Content-Type: application/json
+
 {
-    "nome": "Luiz Vinícius",
-    "email": "lv@gmail.com",
-    "data_nasc":"",
-    "turma_id": "",
-    "hobbies":["","",""]
+    "nome": "Flávio Motta",
+    "email": "flavio@labenu.com",
+    "data_nasc": "1984/08/01",
+    "turma_id": "834hj",
+    "especialidades": ["POO", "Typescript"]
 }
