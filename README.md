@@ -34,3 +34,10 @@ As funcionalidades básicas são:
 
 ## Link da documentação
 https://documenter.getpostman.com/view/20356729/UzBqqRFn
+
+##Membros da equipe:
+→ Eduarda Pacheco
+
+→ Graziela Queiroz
+
+→ Luiz Vinícius de Azevedo
