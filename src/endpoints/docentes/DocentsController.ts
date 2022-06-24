@@ -2,16 +2,7 @@ import { Request, Response } from 'express'
 import  DocentData  from '../../data/DocentData'
 import  DocentModel  from '../../model/DocentModel'
 
-enum ESPECIALITIES {
-    JS = "JS",
-    CSS = "CSS",
-    POO = "POO",
-    REACT = "REACT",
-    JAVASCRIPT = "JAVASCRIPT",
-    TYPESCRIPT = "TYPESCRIPT"
-}
-
-export class DocentController{
+class DocentController{
     async createDocent(req: Request, res: Response) {
         try{
             const{nome, email, data_nasc, turma_id, especialidades} = req.body
@@ -34,3 +25,5 @@ export class DocentController{
         }
     }
 }
+
+export default DocentController;
