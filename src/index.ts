@@ -1,22 +1,19 @@
 import { app } from "./app";
 import { Request, Response } from "express"
-import createTurma from './endpoints/createTurma'
-import searchTurma from './endpoints/searchTurma'
-import changeTurma from "./endpoints/changeTurma";
 import { AddressInfo } from 'net'
 import StudentController from "./endpoints/students/StudentController";
 import { DocentController } from "./endpoints/docentes/DocentsController";
-
-
-app.post("/turma", createTurma);
-
-app.get("/turma", searchTurma);
-
-app.put("/turma/id", changeTurma);
-
+import TurmaController from './endpoints/turma/TurmaController'
 
 const docentController = new DocentController()
 const studentController = new StudentController()
+const turmaController = new TurmaController()
+
+app.post("/turma", turmaController.createTurma);
+
+app.get("/turma", turmaController.getTurma);
+
+app.put("/turma/id", turmaController.putTurma);
 
 app.post("/student", studentController.createStudent)
 
