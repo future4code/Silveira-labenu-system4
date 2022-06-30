@@ -31,3 +31,14 @@ As funcionalidades básicas são:
 → Adicionar docente na turma;
 
 → Pegar a idade de algum estudante a partir do id
+
+## Link da documentação
+[https://documenter.getpostman.com/view/20356729/UzBqqRFn](https://documenter.getpostman.com/view/20356729/UzBqqRFn)
+
+## Membros da equipe:
+
+→ Eduarda Pacheco
+
+→ Graziela Queiroz
+
+→ Luiz Vinícius de Azevedo

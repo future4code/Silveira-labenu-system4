@@ -1,0 +1,65 @@
+GET http://localhost:3003/student/Neymar
+
+GET http://localhost:3003/student
+
+###
+
+POST http://localhost:3003/student
+Content-Type: application/json
+
+{
+    "nome": "Luiz Vinícius",
+    "email": "lv@gmail.com",
+    "data_nasc":"",
+    "turma_id": "",
+    "hobbies":["","",""]
+}
+
+##
+
+POST http://localhost:3003/docent
+Content-Type: application/json
+
+{
+    "nome": "Neymar",
+    "email": "neymar@gmail.com",
+    "data_nasc":"07/12/2000",
+    "turma_id": "73726kjk",
+    "hobbies":["driblar","cair"]
+}
+
+###
+
+PUT http://localhost:3003/student/edit
+Content-Type: application/json
+
+{
+    "estudante_id": "1656027638468",
+    "turma_id": "872iyhd"
+}
+{
+    "nome": "Flávio Motta",
+    "email": "flavio@labenu.com",
+    "data_nasc": "1984/08/01",
+    "turma_id": "834hj",
+    "especialidades": ["POO", "Typescript"]
+}
+
+###
+GET http://localhost:3003/turma
+
+###
+POST http://localhost:3003/turma
+Content-Type: application/json
+
+{
+    "nome": "Turma Testada"
+}
+
+######
+PUT http://localhost:3003/turma/1656018079415
+Content-Type: application/json
+
+{
+    "modulo": "2"
+}
